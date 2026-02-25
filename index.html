@@ -1,0 +1,232 @@
+"+"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zx Cool Service - AC, Fridge, Washing Machine</title>
+    <style>
+        /* General Styles */
+        :root {
+            --primary-color: #0066cc; /* Professional Blue */
+            --secondary-color: #f4f4f4;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        /* Header */
+        header {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .cta-btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x900/?technician,repair');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 50px 5%;
+            background: var(--secondary-color);
+            text-align: center;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .service-box {
+            background: white;
+            padding: 30px;
+            width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .service-box h3 {
+            color: var(--primary-color);
+        }
+
+        /* Features */
+        .features {
+            padding: 50px 5%;
+            text-align: center;
+        }
+
+        /* Contact Form */
+        .contact {
+            background: #333;
+            color: white;
+            padding: 50px 5%;
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            padding: 12px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Zx Cool Service</div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="tel:+919876543210" class="cta-btn">📞 Call: 95286-53838</a>
+    </header>
+
+    <section class="hero">
+        <h1>Expert AC, Fridge & Washing Machine Repair</h1>
+        <p>Reliable service at your doorstep. 24/7 Support in [City Name].</p>
+        <br>
+        <a href="#contact" class="cta-btn">Book Appointment</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p>We repair all major brands and models.</p>
+        
+        <div class="service-container">
+            <div class="service-box">
+                <h3>❄️ AC Repair</h3>
+                <p>Split & Window AC installation, gas filling, cleaning, and cooling issues repair.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>🥶 Refrigerator Repair</h3>
+                <p>Single & Double door fridge repair, compressor issues, and gas charging.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>🧺 Washing Machine</h3>
+                <p>Top load, Front load, & Semi-automatic machine repair, motor and drum issues.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose QuickFix?</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li>✅ <strong>Certified Technicians</strong> - Experienced staff.</li>
+            <li>✅ <strong>Same Day Service</strong> - Quick response time.</li>
+            <li>✅ <strong>Affordable Rates</strong> - No hidden charges.</li>
+            <li>✅ <strong>90-Day Warranty</strong> - On all spare parts.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Book a Visit Now</h2>
+        <p>Fill the form or call us directly.</p>
+        
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Your Phone Number" required>
+            <select>
+                <option>Select Appliance</option>
+                <option>AC Repair</option>
+                <option>Refrigerator</option>
+                <option>Washing Machine</option>
+            </select>
+            <textarea rows="4" placeholder="Describe the problem (optional)"></textarea>
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Zx Cool Service. All rights reserved.</p>
+        <p>Serving [mumbai] and nearby areas.</p>
+    </footer>
+
+</body>
+</html>
